@@ -71,7 +71,7 @@ function calculator(operador){
                 break;
             default:
                 return 'Operação inválida.';
-        } 
+        }
         return 'Resultado da operação: ' + valor1 + ' ' + operador + ' ' + valor2 + ' = ' + resultado + '.';
     };
 }
@@ -93,7 +93,7 @@ var subtraction = calculator('-');
 var multiplication = calculator('*');
 var division = calculator('/');
 var mod = calculator('%');
-var dolar = calculator('$')
+var dolar = calculator('$');
 /*
 Faça uma operação com cada uma das funções criadas acima, mostrando o resultado
 no console.

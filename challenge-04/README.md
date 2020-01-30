@@ -25,7 +25,7 @@ Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 isTruthy(10);
 isTruthy('Henrique');
 isTruthy({});
-isTruthy = ([]);
+isTruthy([]);
 isTruthy(function(){});
 isTruthy('Evoluindo');
 isTruthy(10 * 10);
@@ -45,7 +45,7 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-var carro = { 
+var carro = {
   marca: 'Chevrolet',
   modelo: 'Celta',
   placa: 'ftx789',
@@ -107,14 +107,14 @@ citado acima, no lugar de "pessoas".
 carro.embarque = function(passageiros) {
     var totaldeVagas = carro.quantidadePessoas + passageiros;
     var assentosUsados = carro.assentos - carro.quantidadePessoas;
-    var pluralOuSingular = assentosUsados === 1 ? 'pessoa' : 'pessoas'; 
+    var pluralOuSingular = assentosUsados === 1 ? 'pessoa' : 'pessoas';
     if(carro.quantidadePessoas === carro.assentos && totaldeVagas >= carro.assentos) {
         return 'O carro já está lotado!';
     }
     if(totaldeVagas > carro.assentos)
         return 'Só cabem mais ' + totaldeVagas + ' ' + pluralOuSingular + '!';
     }
-    carro.quantidadePessoas += passageiros; 
+    carro.quantidadePessoas += passageiros;
     return 'Já temos ' + carro.quantidadePessoas + ' ' + pluralOuSingular + ' no carro!';
 }
 /*
@@ -160,7 +160,7 @@ carro.embarque(3);
 
 // Tire 4 pessoas do carro.
 carro.embarque(-4);
-'Já temos 1 pessoa no carro!' 
+'Já temos 1 pessoa no carro!'
 
 // Adicione 10 pessoas no carro.
 carro.embarque(10);

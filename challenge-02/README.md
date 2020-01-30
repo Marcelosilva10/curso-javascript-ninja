@@ -33,7 +33,7 @@ withNumber();
 /*
 var notValue;
 function withNumber() {
-  return notValue = 200; 
+  return notValue = 200;
 }
 withNumber();
 200
@@ -53,13 +53,13 @@ function multiplicacao(x, y, z) {
   }
 multiplicacao(10,20,2);
 // Invoque a função criada acima, passando só dois números como argumento.
-multiplicador(10,20);
+multiplicacao(10,20);
 '
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 //"Preencha todos os valores corretamente!"
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-multiplicador(10,20,2);
+multiplicacao(10,20,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 /*202*/
@@ -75,21 +75,20 @@ Crie uma função com as seguintes características:
 */
 
 function values(value01, value02, value03) {
-    if(value01 !== undefined && value02 === undefined && value03 === undefined) { 
-        return value01;
-    } else if(value01 !== undefined && value02 !== undefined && value03 === undefined){
-        return value01 + value02;
-    } else if (value01 !== undefined && value02 !== undefined && value03 === undefined) {
-        return ( value01 + value02) / value03;
-    } else if (value01 === undefined && value02 === undefined && value03 === undefined) {
-        return false;
-    } else {
-        return null;
-    }
+  if(value01 !== undefined && value02 === undefined && value03 === undefined) { 
+      return value01;
+  } else if(value01 !== undefined && value02 !== undefined && value03 === undefined){
+      return value01 + value02;
+  } else if (value01 !== undefined && value02 !== undefined && value03 === undefined) {
+      return ( value01 + value02 ) / value03;
+  } else if (value01 === undefined && value02 === undefined && value03 === undefined) {
+      return false;
+  } else {
+      return null;
+  }
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-```
 /*
 values();
 Nenhum argumento.
